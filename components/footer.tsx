@@ -105,7 +105,10 @@ export const Footer = () => (
             <ul>
               {column.links.map((link) => (
                 <li className="[&_a:last:mb-0">
-                  <Link className="block mb-3 text-grey" href={link.href}>
+                  <Link
+                    className="block mb-3 transition-colors text-grey hover:text-white"
+                    href={link.href}
+                  >
                     {link.title}
                   </Link>
                 </li>
