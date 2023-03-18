@@ -7,10 +7,11 @@ export default function Homepage() {
       <Hero>
         <HeroTitle>
           Linear is a better way
-          <br /> to build products
+          <br className="hidden md:block" /> to build products
         </HeroTitle>
         <HeroSubtitle>
-          Meet the new started for modern software developement. <br />{" "}
+          Meet the new started for modern software developement.
+          <br className="hidden md:block" />
           Streamline issues, sprints, and product roadmaps.
         </HeroSubtitle>
         <img src="/img/hero.png" />
