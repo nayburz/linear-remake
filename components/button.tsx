@@ -10,14 +10,13 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
   variants: {
     variant: {
       primary: [
-        "bg-primary-gradient hover:text-shadow hover:box-shadow-primary hover:shadow-primary transition-[shadow,text-shadow]",
+        "bg-primary-gradient hover:text-shadow hover:shadow-primary transition-[shadow,text-shadow]",
         "[&_.icon-wrapper]:ml-2",
       ],
       secondary: [
         "transition-colors ease-in hover:bg-opacity-20 text-off-white bg-white bg-opacity-10 border border-transparent-white backdrop-filter-[12px]",
         "[&_.icon-wrapper]:bg-transparent-white [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:px-2 [&_.icon-wrapper]:ml-2 [&_.icon-wrapper]:-mr-2",
       ],
-      tertiary: "",
     },
     size: {
       small: "text-xs px-3 h-7",
