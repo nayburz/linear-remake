@@ -84,8 +84,8 @@ const footerLinks = [
 ];
 
 export const Footer = () => (
-  <footer className="mt-12 border-t border-white-a08 py-[5.6rem] text-sm">
-    <Container className="flex flex-col justify-between bg-white  lg:flex-row">
+  <footer className="border-transparent-white mt-12 border-t border-off-white py-[5.6rem] text-sm">
+    <Container className="flex flex-col justify-between lg:flex-row">
       <div>
         <div className="flex flex-row justify-between h-full lg:flex-col">
           <div className="flex items-center text-grey">
@@ -106,7 +106,7 @@ export const Footer = () => (
               {column.links.map((link) => (
                 <li className="[&_a:last:mb-0">
                   <Link
-                    className="block mb-3 transition-colors text-grey hover:text-white"
+                    className="block mb-3 transition-colors text-grey hover:text-off-white"
                     href={link.href}
                   >
                     {link.title}

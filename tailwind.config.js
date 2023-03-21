@@ -26,10 +26,12 @@ module.exports = {
     colors: {
       transparent: "transparent",
       white: "#fff",
-      "white-a08": "rgba(255,255,255,0.08)",
+      "off-white": "#f7fBfa",
+      "transparent-white": "rgba(255,255,255,0.08)",
       background: "#000315",
       grey: "#858699",
       "grey-dark": "#222326",
+      "primary-text": "rgb(180, 188, 208)",
     },
     spacing: {
       0: "0",

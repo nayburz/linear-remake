@@ -10,7 +10,10 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
   variants: {
     variant: {
       primary: "bg-primary-gradient hover:text-shadow hover:box-shadow-primary",
-      secondary: "",
+      secondary: [
+        "transition-colors ease-in hover:bg-opacity-20 text-off-white bg-white bg-opacity-10 border border-transparent-white backdrop-filter-[12px]",
+        "[&_.icon_wrapper]:bg-transparent-white [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:px-2 [&_.icon-wrapper]:ml-2 [&_.icon-wrapper]:-mr-2",
+      ],
       tertiary: "",
     },
     size: {
@@ -24,6 +27,10 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
     size: "medium",
   },
 });
+
+export const IconWrapper = ({ children }: { children: React.ReactNode }) => (
+  <span className="icon-wrapper">{children}</span>
+);
 
 export const Button = ({ children, href, variant, size }: ButtonProps) => {
   return (
