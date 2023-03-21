@@ -1,6 +1,8 @@
 import { Button, IconWrapper } from "../components/button";
 import { Container } from "../components/container";
 import { Hero, HeroTitle, HeroSubtitle } from "../components/hero";
+import { HeroImage } from "../components/hero-image";
+
 import { ChevronIcon } from "../components/icons/chevron";
 
 export default function Homepage() {
@@ -35,7 +37,7 @@ export default function Homepage() {
             <ChevronIcon />
           </IconWrapper>
         </Button>
-        <img className="mt-[12.8rem]" src="/img/hero.png" />
+        <HeroImage />
       </Hero>
     </Container>
   );
