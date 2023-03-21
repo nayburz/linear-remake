@@ -1,6 +1,7 @@
 import { Button, IconWrapper } from "../components/button";
 import { Container } from "../components/container";
 import { Hero, HeroTitle, HeroSubtitle } from "../components/hero";
+import { ChevronIcon } from "../components/icons/chevron";
 
 export default function Homepage() {
   return (
@@ -18,7 +19,13 @@ export default function Homepage() {
           <br className="hidden md:block" />
           Streamline issues, sprints, and product roadmaps.
         </HeroSubtitle>
-        <img src="/img/hero.png" />
+        <Button href="/" variant="primary" size="large">
+          Get Started
+          <IconWrapper>
+            <ChevronIcon />
+          </IconWrapper>
+        </Button>
+        <img className="mt-[12.8rem]" src="/img/hero.png" />
       </Hero>
     </Container>
   );
